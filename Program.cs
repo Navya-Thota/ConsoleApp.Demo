@@ -1,10 +1,15 @@
 ﻿int age = 0;
 
-string name = string.Empty;
+string firstName = string.Empty;
 
-Console.WriteLine("Please Enter Your Name:");
+string lastName = string.Empty;
 
-name = Console.ReadLine();
+Console.WriteLine("Please Enter Your first Name:");
+
+Console.WriteLine("Please Enter Your last Name:");
+
+firstName = Console.ReadLine();
+lastName = Console.ReadLine();
 
 Console.WriteLine("Please Enter Your age:");
 
@@ -13,7 +18,7 @@ age = Convert.ToInt32(Console.ReadLine());
 int ageEligibleToWork =62 - age;
 
 
-Console.WriteLine($"Your Name: {name}");
+Console.WriteLine($"Full Name: {firstName} {lastName}");
 
 Console.WriteLine($"Your working years remaining:{ageEligibleToWork}");
 
